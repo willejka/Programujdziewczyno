@@ -76,6 +76,8 @@ for (var j = 0; j <= samochody.length-1; j++){
 
 // DOM Document Object Model DOM Api
 var ppp = document.querySelector("jumbotron");
-ppp.style.border = "3px solid red"
+ppp.style.border = "3px solid red";
 
-var divs = 
+var divs = document.querySelectorAll("div")
+console.log( divs.length );
+divs[0].style.display = "none";
