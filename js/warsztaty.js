@@ -35,5 +35,16 @@ for(var i = 0; i < menuList.length; i++){
     })
 }
 
+var buttons = document.querySelectorAll(".read-more");
+console.log(buttons);
 
- });
+console.log(buttons[0].previousElementSibling);
+
+buttons[0].addEventListener('click', function() {
+      var textArea = this.previousElementSibling;
+      textArea.style.display = 'block';
+      this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
+    });
+
+    });
+
